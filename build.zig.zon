@@ -1,0 +1,13 @@
+.{
+    .name = "mime",
+    .version = "1.0.0",
+
+    .paths = .{
+        "LICENSE",
+        "README.md",
+        "build.zig",
+        "build.zig.zon",
+        "mime.zig",
+        "test.zig",
+    },
+}
