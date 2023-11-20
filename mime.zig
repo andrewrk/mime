@@ -71,6 +71,7 @@ pub const Type = enum(u16) {
     @"video/mp4",
     @"video/mpeg",
     @"video/ogg",
+    @"video/quicktime",
     @"video/webm",
     @"video/x-msvideo",
 };
@@ -108,6 +109,7 @@ pub const extension_map = std.ComptimeStringMap(Type, .{
     .{ ".jsonld", .@"application/ld+json" },
     .{ ".mid", .@"audio/midi" },
     .{ ".mjs", .@"application/javascript" },
+    .{ ".mov", .@"video/quicktime" },
     .{ ".mp3", .@"audio/mpeg" },
     .{ ".mp4", .@"video/mp4" },
     .{ ".mpeg", .@"video/mpeg" },
