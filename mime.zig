@@ -78,7 +78,7 @@ pub const Type = enum(u16) {
 };
 
 /// Maps file extension to mime type.
-pub const extension_map = std.ComptimeStringMap(Type, .{
+pub const extension_map = std.StaticStringMap(Type).initComptime(.{
     .{ ".aac", .@"audio/aac" },
     .{ ".abw", .@"application/x-abiword" },
     .{ ".arc", .@"application/x-freearc" },
