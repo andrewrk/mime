@@ -5,13 +5,13 @@ pub fn build(b: *std.Build) void {
     const optimize = b.standardOptimizeOption(.{});
 
     const module = b.addModule("mime", .{
-        .root_source_file = .{ .path = "mime.zig" },
+        .root_source_file = b.path("mime.zig"),
         .target = target,
         .optimize = optimize,
     });
 
     const unit_tests = b.addTest(.{
-        .root_source_file = .{ .path = "test.zig" },
+        .root_source_file = b.path("test.zig"),
         .target = target,
         .optimize = optimize,
     });
