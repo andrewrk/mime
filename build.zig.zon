@@ -1,7 +1,8 @@
 .{
-    .name = "mime",
+    .name = .mime,
     .version = "2.0.1",
-    .minimum_zig_version = "0.13.0-dev.33+8af59d1f9",
+    .minimum_zig_version = "0.14.0-dev.3451+d8d2aa9af",
+    .fingerprint = 0x42858050fb8b09cf,
 
     .paths = .{
         "LICENSE",
