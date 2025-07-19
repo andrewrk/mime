@@ -1,7 +1,7 @@
 .{
     .name = .mime,
-    .version = "3.0.0",
-    .minimum_zig_version = "0.14.0-dev.3451+d8d2aa9af",
+    .version = "4.0.0",
+    .minimum_zig_version = "0.15.0-dev.1145+3ae0ba096",
     .fingerprint = 0x42858050fb8b09cf,
 
     .paths = .{
